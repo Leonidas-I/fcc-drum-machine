@@ -1,0 +1,141 @@
+$padHeight: 100px;
+$padWidth: 100px;
+
+body {
+  background-color: lighten(grey, 30%);
+  font-family: Helvetica, Arial, sans-serif;
+  user-select: none;
+}
+#DrumMachine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.drum-kit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  outline: 5px solid orangered;
+  position: relative;
+  background-image: linear-gradient(to right, cyan, lighten(violet, 10%));
+  text-align: center;
+  width: 700px;
+  .pad-bank {
+    height: $padHeight*3 + 30;
+    width: $padWidth*3 + 30;
+    margin: 20px 20px;
+    display: inline-block;
+    .drum-pad {
+      position: relative;
+      float: left;
+      height: $padHeight;
+      width: $padWidth;
+      box-sizing: border-box;
+      padding-top: 40px;
+      margin-right: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: darken(black, 40%);
+    }
+  }
+  .controller {
+    height: $padHeight*3 + 40;
+    width: 260px;
+    display: inline-block;
+    margin: 10px 10px;
+    position: relative;
+    box-sizing: border-box;
+    .powerButton {
+      font-family: Arial, sans-serif;
+      display: inline-block;
+      vertical-align: top;
+      margin: 5px auto;
+      font-size: 1.2em;
+      .powerCheckbox {
+        display: none;
+      }
+      .powerUI {
+        position: relative;
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 20px;
+        width: 80px;
+        height: 30px;
+        
+        text-transform: uppercase;
+        background-color: red;
+        border: 1px solid red;
+        color: white;
+        transition: all ease 0.5s;
+        cursor: pointer;
+      }
+      .powerUI::before {
+        position: absolute;
+        display: inline-block;
+        top: 5px;
+        left: 5px;
+        height: 20px;
+        
+        background: white;
+        color: red;
+        content:'off'; 
+        transition: all ease 0.5s;
+      }
+      .powerCheckbox:checked + .powerUI {
+        background-color: hsl(120, 100%, 40%);
+        border: 1px solid hsl(120, 100%, 40%);
+      }
+      .powerCheckbox:checked + .powerUI::before {
+        left: 50px;
+        content: 'on';
+        color: hsl(120, 100%, 40%);
+      }
+    }
+    #display {
+      box-sizing: border-box;
+      width: 200px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px 20px;
+      background-color: lighten(silver, 10%);
+    }
+    .volume-slider {
+      cursor:pointer;
+      margin: 10px auto;
+    }
+    .bank-select-input {
+      display: none;
+    }
+    .bank-select-button {
+      margin: 10px 10px;
+      position: relative;
+      font-size: 1em;
+      display: inline-block;
+      font-family: Monospace, serif, sans-serif;
+      border: 1px solid #fff;
+      padding: 5px 5px;
+      background-color: white;
+      cursor: pointer;
+      transition: all 0.5s ease-out;
+    }
+    .bank-select-input:checked + .bank-select-button {
+      background-color: orangered;
+      border-color: orangered;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .drum-kit {
+    transform: scale(0.75);
+    background-image: linear-gradient(180deg, cyan, lighten(violet, 10%));
+  }
+}
