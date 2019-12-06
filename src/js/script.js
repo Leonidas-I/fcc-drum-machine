@@ -100,7 +100,7 @@ const activeStatus = {                          //so sanh 2 cach khai bao proper
   
 }
 
-const inactiveStatus = {                        //so sanh 2 cach khai bao propertities trong style in-line JSX
+const inactiveStatus = {
   backgroundColor: 'silver',
   boxShadow: '3px 3px 5px black',
 }
@@ -199,7 +199,7 @@ class PadBank extends React.Component {
   }
 }
 
-class Project extends React.Component {
+class DrumMachine extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -297,4 +297,4 @@ class Project extends React.Component {
   }
 }
 
-ReactDOM.render(<Project />, document.getElementById('DrumMachine'));
+ReactDOM.render(<DrumMachine />, document.getElementById('App'));
