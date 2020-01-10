@@ -56,7 +56,7 @@ export class DrumMachine extends Component {
   render() {
     let titleStyle = {
       color: '#990000',
-      textDecoration: 'underline dashed #0000FF',
+      textDecoration: 'underline solid #0000FF',
       fontStyle: 'italic',
       fontSize: '1.2em'
     };
@@ -86,7 +86,7 @@ export class DrumMachine extends Component {
           </div>
           
           <label for="Bank1" onClick={this.selectBank}>
-            <input id="Bank1" type="radio" name="bank" className="bank-select-input" />
+            <input id="Bank1" type="radio" name="bank" className="bank-select-input" defaultChecked />
             <span className="bank-select-button">Bank One</span>
           </label>
           <label for="Bank2" onClick={this.selectBank}>
