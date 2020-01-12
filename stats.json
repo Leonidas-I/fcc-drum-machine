@@ -4,15 +4,15 @@
   "warnings": [
   ],
   "version": "4.41.2",
-  "hash": "d6f7404ae21abfc7a49b",
-  "time": 24628,
-  "builtAt": 1578712504377,
+  "hash": "52d22bd951bb846e4cd2",
+  "time": 16486,
+  "builtAt": 1578798675466,
   "publicPath": "",
   "outputPath": "/home/arcolinux/leonidas-project/fcc-drum-machine/dist",
   "assetsByChunkName": {
     "main": [
-      "main.ae4f0162f30b5de9cdaf.css",
-      "main.3fe8639afe68ea09e947.js"
+      "main.a1f1d584111a80bf74fd.css",
+      "main.a9805fa56fbe264ce51c.js"
     ],
     "runtime~main": "runtime~main.4b7f394368e818c2a596.js",
     "vendor": "vendor.da4bb7f62e0663db3c28.js"
@@ -30,8 +30,8 @@
       "emitted": true
     },
     {
-      "name": "main.3fe8639afe68ea09e947.js",
-      "size": 15972,
+      "name": "main.a1f1d584111a80bf74fd.css",
+      "size": 3302,
       "chunks": [
         0
       ],
@@ -44,8 +44,8 @@
       "emitted": true
     },
     {
-      "name": "main.ae4f0162f30b5de9cdaf.css",
-      "size": 2824,
+      "name": "main.a9805fa56fbe264ce51c.js",
+      "size": 16185,
       "chunks": [
         0
       ],
@@ -97,8 +97,8 @@
       "assets": [
         "runtime~main.4b7f394368e818c2a596.js",
         "vendor.da4bb7f62e0663db3c28.js",
-        "main.ae4f0162f30b5de9cdaf.css",
-        "main.3fe8639afe68ea09e947.js"
+        "main.a1f1d584111a80bf74fd.css",
+        "main.a9805fa56fbe264ce51c.js"
       ],
       "children": {
       },
@@ -116,8 +116,8 @@
       "assets": [
         "runtime~main.4b7f394368e818c2a596.js",
         "vendor.da4bb7f62e0663db3c28.js",
-        "main.ae4f0162f30b5de9cdaf.css",
-        "main.3fe8639afe68ea09e947.js"
+        "main.a1f1d584111a80bf74fd.css",
+        "main.a9805fa56fbe264ce51c.js"
       ],
       "children": {
       },
@@ -131,15 +131,15 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 27299,
+      "size": 28059,
       "names": [
         "main"
       ],
       "files": [
-        "main.ae4f0162f30b5de9cdaf.css",
-        "main.3fe8639afe68ea09e947.js"
+        "main.a1f1d584111a80bf74fd.css",
+        "main.a9805fa56fbe264ce51c.js"
       ],
-      "hash": "7957d89032a0b6aa1959",
+      "hash": "c8e98b04efef82fac1e3",
       "siblings": [
         1,
         2
@@ -393,7 +393,7 @@
           "name": "./src/js/index.js + 5 modules",
           "index": 0,
           "index2": 14,
-          "size": 17022,
+          "size": 17304,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -478,7 +478,7 @@
               "name": "./src/js/drummachine.js",
               "index": 8,
               "index2": 11,
-              "size": 6273,
+              "size": 6530,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -529,7 +529,7 @@
               "optimizationBailout": [
               ],
               "depth": 1,
-              "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nimport { bankOne } from './bankone';\nimport { bankTwo } from './banktwo';\nimport { PadBank } from './padbank';\nexport var DrumMachine =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumMachine, _Component);\n\n  function DrumMachine(props) {\n    var _this;\n\n    _classCallCheck(this, DrumMachine);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumMachine).call(this, props));\n    _this.state = {\n      power: false,\n      display: 'Turn ON to use',\n      volumeSlider: 0.5,\n      selectPadBank: bankOne\n    };\n    _this.powerControl = _this.powerControl.bind(_assertThisInitialized(_this));\n    _this.displayMonitor = _this.displayMonitor.bind(_assertThisInitialized(_this));\n    _this.volumeControl = _this.volumeControl.bind(_assertThisInitialized(_this));\n    _this.selectBank = _this.selectBank.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumMachine, [{\n    key: \"powerControl\",\n    value: function powerControl() {\n      this.setState({\n        power: !this.state.power,\n        display: String.fromCharCode(160)\n      });\n    }\n  }, {\n    key: \"displayMonitor\",\n    value: function displayMonitor(x) {\n      if (this.state.power) {\n        this.setState({\n          display: x\n        });\n      }\n    }\n  }, {\n    key: \"volumeControl\",\n    value: function volumeControl(e) {\n      if (this.state.power) {\n        this.setState({\n          volumeSlider: e.target.value,\n          display: 'Volume: ' + Math.round(e.target.value * 100) + '%'\n        });\n      }\n    }\n  }, {\n    key: \"selectBank\",\n    value: function selectBank() {\n      if (this.state.power) {\n        document.getElementById(\"Bank1\").checked === true ? this.setState({\n          display: 'Bank 1 ready',\n          selectPadBank: bankOne\n        }) : this.setState({\n          display: 'Bank 2 ready',\n          selectPadBank: bankTwo\n        });\n      }\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var titleStyle = {\n        color: '#990000',\n        textDecoration: 'underline solid #0000FF',\n        fontStyle: 'italic',\n        fontSize: '1.2em'\n      };\n      return React.createElement(\"div\", {\n        id: \"drum-machine\",\n        className: \"drum-kit\"\n      }, React.createElement(PadBank, {\n        power: this.state.power,\n        display: this.displayMonitor,\n        mp3Volume: this.state.volumeSlider,\n        selectPadBank: this.state.selectPadBank\n      }), React.createElement(\"div\", {\n        className: \"controller\"\n      }, React.createElement(\"label\", {\n        \"for\": \"powerID\",\n        className: \"powerButton\",\n        style: titleStyle\n      }, \"  \", React.createElement(\"p\", null, \"Power\"), React.createElement(\"input\", {\n        type: \"checkbox\",\n        id: \"powerID\",\n        className: \"powerCheckbox\",\n        onClick: this.powerControl\n      }), React.createElement(\"span\", {\n        className: \"powerUI\"\n      })), React.createElement(\"div\", {\n        id: \"display\"\n      }, this.state.display), React.createElement(\"div\", {\n        style: titleStyle\n      }, React.createElement(\"p\", null, \"Volume\"), React.createElement(\"input\", {\n        type: \"range\",\n        min: \"0\",\n        max: \"1\",\n        step: \"0.01\",\n        className: \"volume-slider\",\n        value: this.state.volumeSlider,\n        onChange: this.volumeControl\n      })), React.createElement(\"label\", {\n        \"for\": \"Bank1\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank1\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\",\n        defaultChecked: true\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank One\")), React.createElement(\"label\", {\n        \"for\": \"Bank2\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank2\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\"\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank Two\"))));\n    }\n  }]);\n\n  return DrumMachine;\n}(Component);\n;"
+              "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nimport { bankOne } from './bankone';\nimport { bankTwo } from './banktwo';\nimport { PadBank } from './padbank';\nexport var DrumMachine =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumMachine, _Component);\n\n  function DrumMachine(props) {\n    var _this;\n\n    _classCallCheck(this, DrumMachine);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumMachine).call(this, props));\n    _this.state = {\n      power: false,\n      display: 'Turn ON to use',\n      volumeSlider: 0.5,\n      selectPadBank: bankOne\n    };\n    _this.powerControl = _this.powerControl.bind(_assertThisInitialized(_this));\n    _this.displayMonitor = _this.displayMonitor.bind(_assertThisInitialized(_this));\n    _this.volumeControl = _this.volumeControl.bind(_assertThisInitialized(_this));\n    _this.selectBank = _this.selectBank.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumMachine, [{\n    key: \"powerControl\",\n    value: function powerControl() {\n      this.setState({\n        power: !this.state.power,\n        display: String.fromCharCode(160)\n      });\n    }\n  }, {\n    key: \"displayMonitor\",\n    value: function displayMonitor(x) {\n      if (this.state.power) {\n        this.setState({\n          display: x\n        });\n      }\n    }\n  }, {\n    key: \"volumeControl\",\n    value: function volumeControl(e) {\n      if (this.state.power) {\n        this.setState({\n          volumeSlider: e.target.value,\n          display: 'Volume: ' + Math.round(e.target.value * 100) + '%'\n        });\n      }\n    }\n  }, {\n    key: \"selectBank\",\n    value: function selectBank() {\n      if (this.state.power) {\n        document.getElementById(\"Bank1\").checked === true ? this.setState({\n          display: 'Bank 1 ready',\n          selectPadBank: bankOne\n        }) : this.setState({\n          display: 'Bank 2 ready',\n          selectPadBank: bankTwo\n        });\n      }\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var titleStyle = {\n        color: '#990000',\n        textDecoration: 'underline solid #0000FF',\n        fontStyle: 'italic',\n        fontSize: '1.2em'\n      };\n      return React.createElement(\"div\", {\n        className: \"wrapper\"\n      }, React.createElement(\"div\", {\n        id: \"drum-machine\",\n        className: \"drum-kit\"\n      }, React.createElement(PadBank, {\n        power: this.state.power,\n        display: this.displayMonitor,\n        mp3Volume: this.state.volumeSlider,\n        selectPadBank: this.state.selectPadBank\n      }), React.createElement(\"div\", {\n        className: \"controller\"\n      }, React.createElement(\"label\", {\n        \"for\": \"powerID\",\n        className: \"powerButton\",\n        style: titleStyle\n      }, \"  \", React.createElement(\"p\", null, \"Power\"), React.createElement(\"input\", {\n        type: \"checkbox\",\n        id: \"powerID\",\n        className: \"powerCheckbox\",\n        onClick: this.powerControl\n      }), React.createElement(\"span\", {\n        className: \"powerUI\"\n      })), React.createElement(\"div\", {\n        id: \"display\"\n      }, this.state.display), React.createElement(\"div\", {\n        style: titleStyle\n      }, React.createElement(\"p\", null, \"Volume\"), React.createElement(\"input\", {\n        type: \"range\",\n        min: \"0\",\n        max: \"1\",\n        step: \"0.01\",\n        className: \"volume-slider\",\n        value: this.state.volumeSlider,\n        onChange: this.volumeControl\n      })), React.createElement(\"label\", {\n        \"for\": \"Bank1\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank1\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\",\n        defaultChecked: true\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank One\")), React.createElement(\"label\", {\n        \"for\": \"Bank2\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank2\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\"\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank Two\")))), React.createElement(\"footer\", null, \"Code by \", React.createElement(\"a\", {\n        href: \"https://github.com/Leonidas-I\",\n        target: \"_blank\"\n      }, \"Leonidas-I\"), \" aka Tri Phan\"));\n    }\n  }]);\n\n  return DrumMachine;\n}(Component);\n;"
             },
             {
               "id": null,
@@ -718,7 +718,7 @@
                   "moduleName": "./src/js/drummachine.js",
                   "type": "harmony import specifier",
                   "userRequest": "./padbank",
-                  "loc": "99:29-36"
+                  "loc": "101:29-36"
                 }
               ],
               "usedExports": [
@@ -738,7 +738,7 @@
               "name": "./src/js/drumpad.js",
               "index": 12,
               "index2": 9,
-              "size": 4650,
+              "size": 4675,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -808,7 +808,7 @@
               "optimizationBailout": [
               ],
               "depth": 3,
-              "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
+              "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link,\n        preload: \"auto\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
             }
           ],
           "filteredModules": 0
@@ -819,7 +819,7 @@
           "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss",
           "index": 14,
           "index2": 12,
-          "size": 2823,
+          "size": 3301,
           "built": false,
           "optional": false,
           "prefetched": false,
@@ -1074,6 +1074,15 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
+              "loc": "98:9-14"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/js/index.js 838577ec463b8fd28272bcb5f5e76595",
+              "module": "./src/js/index.js + 5 modules",
+              "moduleName": "./src/js/index.js + 5 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
               "loc": "98:13-18"
             },
             {
@@ -1083,7 +1092,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "99:9-14"
+              "loc": "101:9-14"
             },
             {
               "moduleId": 8,
@@ -1101,7 +1110,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "104:10-15"
+              "loc": "106:10-15"
             },
             {
               "moduleId": 8,
@@ -1110,7 +1119,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "106:9-14"
+              "loc": "108:9-14"
             },
             {
               "moduleId": 8,
@@ -1119,7 +1128,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "110:15-20"
+              "loc": "112:15-20"
             },
             {
               "moduleId": 8,
@@ -1128,7 +1137,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "110:56-61"
+              "loc": "112:56-61"
             },
             {
               "moduleId": 8,
@@ -1137,7 +1146,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "112:2-11"
+              "loc": "113:2-11"
             },
             {
               "moduleId": 8,
@@ -1146,7 +1155,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "115:10-15"
+              "loc": "117:10-15"
             },
             {
               "moduleId": 8,
@@ -1155,7 +1164,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "117:11-16"
+              "loc": "119:11-16"
             },
             {
               "moduleId": 8,
@@ -1164,7 +1173,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "119:30-35"
+              "loc": "121:30-35"
             },
             {
               "moduleId": 8,
@@ -1173,7 +1182,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "121:9-14"
+              "loc": "123:9-14"
             },
             {
               "moduleId": 8,
@@ -1182,7 +1191,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "121:51-56"
+              "loc": "123:51-56"
             },
             {
               "moduleId": 8,
@@ -1191,7 +1200,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "129:11-16"
+              "loc": "131:11-16"
             },
             {
               "moduleId": 8,
@@ -1200,7 +1209,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "132:9-14"
+              "loc": "134:9-14"
             },
             {
               "moduleId": 8,
@@ -1209,7 +1218,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "138:10-15"
+              "loc": "140:10-15"
             },
             {
               "moduleId": 8,
@@ -1218,7 +1227,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "140:23-28"
+              "loc": "142:23-28"
             },
             {
               "moduleId": 8,
@@ -1227,7 +1236,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "143:9-14"
+              "loc": "145:9-14"
             },
             {
               "moduleId": 8,
@@ -1236,7 +1245,7 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "148:10-15"
+              "loc": "150:10-15"
             },
             {
               "moduleId": 8,
@@ -1245,7 +1254,25 @@
               "moduleName": "./src/js/index.js + 5 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "155:2-11"
+              "loc": "152:25-30"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/js/index.js 838577ec463b8fd28272bcb5f5e76595",
+              "module": "./src/js/index.js + 5 modules",
+              "moduleName": "./src/js/index.js + 5 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "152:73-78"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/js/index.js 838577ec463b8fd28272bcb5f5e76595",
+              "module": "./src/js/index.js + 5 modules",
+              "moduleName": "./src/js/index.js + 5 modules",
+              "type": "harmony import specifier",
+              "userRequest": "react",
+              "loc": "160:2-11"
             }
           ],
           "usedExports": true,
@@ -1573,6 +1600,15 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
+          "loc": "98:9-14"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/js/index.js 838577ec463b8fd28272bcb5f5e76595",
+          "module": "./src/js/index.js + 5 modules",
+          "moduleName": "./src/js/index.js + 5 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
           "loc": "98:13-18"
         },
         {
@@ -1582,7 +1618,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "99:9-14"
+          "loc": "101:9-14"
         },
         {
           "moduleId": 8,
@@ -1600,7 +1636,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "104:10-15"
+          "loc": "106:10-15"
         },
         {
           "moduleId": 8,
@@ -1609,7 +1645,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "106:9-14"
+          "loc": "108:9-14"
         },
         {
           "moduleId": 8,
@@ -1618,7 +1654,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "110:15-20"
+          "loc": "112:15-20"
         },
         {
           "moduleId": 8,
@@ -1627,7 +1663,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "110:56-61"
+          "loc": "112:56-61"
         },
         {
           "moduleId": 8,
@@ -1636,7 +1672,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "112:2-11"
+          "loc": "113:2-11"
         },
         {
           "moduleId": 8,
@@ -1645,7 +1681,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "115:10-15"
+          "loc": "117:10-15"
         },
         {
           "moduleId": 8,
@@ -1654,7 +1690,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "117:11-16"
+          "loc": "119:11-16"
         },
         {
           "moduleId": 8,
@@ -1663,7 +1699,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "119:30-35"
+          "loc": "121:30-35"
         },
         {
           "moduleId": 8,
@@ -1672,7 +1708,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "121:9-14"
+          "loc": "123:9-14"
         },
         {
           "moduleId": 8,
@@ -1681,7 +1717,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "121:51-56"
+          "loc": "123:51-56"
         },
         {
           "moduleId": 8,
@@ -1690,7 +1726,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "129:11-16"
+          "loc": "131:11-16"
         },
         {
           "moduleId": 8,
@@ -1699,7 +1735,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "132:9-14"
+          "loc": "134:9-14"
         },
         {
           "moduleId": 8,
@@ -1708,7 +1744,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "138:10-15"
+          "loc": "140:10-15"
         },
         {
           "moduleId": 8,
@@ -1717,7 +1753,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "140:23-28"
+          "loc": "142:23-28"
         },
         {
           "moduleId": 8,
@@ -1726,7 +1762,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "143:9-14"
+          "loc": "145:9-14"
         },
         {
           "moduleId": 8,
@@ -1735,7 +1771,7 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "148:10-15"
+          "loc": "150:10-15"
         },
         {
           "moduleId": 8,
@@ -1744,7 +1780,25 @@
           "moduleName": "./src/js/index.js + 5 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "155:2-11"
+          "loc": "152:25-30"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/js/index.js 838577ec463b8fd28272bcb5f5e76595",
+          "module": "./src/js/index.js + 5 modules",
+          "moduleName": "./src/js/index.js + 5 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "152:73-78"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/js/index.js 838577ec463b8fd28272bcb5f5e76595",
+          "module": "./src/js/index.js + 5 modules",
+          "moduleName": "./src/js/index.js + 5 modules",
+          "type": "harmony import specifier",
+          "userRequest": "react",
+          "loc": "160:2-11"
         }
       ],
       "usedExports": true,
@@ -2162,7 +2216,7 @@
       "name": "./src/js/index.js + 5 modules",
       "index": 0,
       "index2": 14,
-      "size": 17022,
+      "size": 17304,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2247,7 +2301,7 @@
           "name": "./src/js/drummachine.js",
           "index": 8,
           "index2": 11,
-          "size": 6273,
+          "size": 6530,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2298,7 +2352,7 @@
           "optimizationBailout": [
           ],
           "depth": 1,
-          "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nimport { bankOne } from './bankone';\nimport { bankTwo } from './banktwo';\nimport { PadBank } from './padbank';\nexport var DrumMachine =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumMachine, _Component);\n\n  function DrumMachine(props) {\n    var _this;\n\n    _classCallCheck(this, DrumMachine);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumMachine).call(this, props));\n    _this.state = {\n      power: false,\n      display: 'Turn ON to use',\n      volumeSlider: 0.5,\n      selectPadBank: bankOne\n    };\n    _this.powerControl = _this.powerControl.bind(_assertThisInitialized(_this));\n    _this.displayMonitor = _this.displayMonitor.bind(_assertThisInitialized(_this));\n    _this.volumeControl = _this.volumeControl.bind(_assertThisInitialized(_this));\n    _this.selectBank = _this.selectBank.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumMachine, [{\n    key: \"powerControl\",\n    value: function powerControl() {\n      this.setState({\n        power: !this.state.power,\n        display: String.fromCharCode(160)\n      });\n    }\n  }, {\n    key: \"displayMonitor\",\n    value: function displayMonitor(x) {\n      if (this.state.power) {\n        this.setState({\n          display: x\n        });\n      }\n    }\n  }, {\n    key: \"volumeControl\",\n    value: function volumeControl(e) {\n      if (this.state.power) {\n        this.setState({\n          volumeSlider: e.target.value,\n          display: 'Volume: ' + Math.round(e.target.value * 100) + '%'\n        });\n      }\n    }\n  }, {\n    key: \"selectBank\",\n    value: function selectBank() {\n      if (this.state.power) {\n        document.getElementById(\"Bank1\").checked === true ? this.setState({\n          display: 'Bank 1 ready',\n          selectPadBank: bankOne\n        }) : this.setState({\n          display: 'Bank 2 ready',\n          selectPadBank: bankTwo\n        });\n      }\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var titleStyle = {\n        color: '#990000',\n        textDecoration: 'underline solid #0000FF',\n        fontStyle: 'italic',\n        fontSize: '1.2em'\n      };\n      return React.createElement(\"div\", {\n        id: \"drum-machine\",\n        className: \"drum-kit\"\n      }, React.createElement(PadBank, {\n        power: this.state.power,\n        display: this.displayMonitor,\n        mp3Volume: this.state.volumeSlider,\n        selectPadBank: this.state.selectPadBank\n      }), React.createElement(\"div\", {\n        className: \"controller\"\n      }, React.createElement(\"label\", {\n        \"for\": \"powerID\",\n        className: \"powerButton\",\n        style: titleStyle\n      }, \"  \", React.createElement(\"p\", null, \"Power\"), React.createElement(\"input\", {\n        type: \"checkbox\",\n        id: \"powerID\",\n        className: \"powerCheckbox\",\n        onClick: this.powerControl\n      }), React.createElement(\"span\", {\n        className: \"powerUI\"\n      })), React.createElement(\"div\", {\n        id: \"display\"\n      }, this.state.display), React.createElement(\"div\", {\n        style: titleStyle\n      }, React.createElement(\"p\", null, \"Volume\"), React.createElement(\"input\", {\n        type: \"range\",\n        min: \"0\",\n        max: \"1\",\n        step: \"0.01\",\n        className: \"volume-slider\",\n        value: this.state.volumeSlider,\n        onChange: this.volumeControl\n      })), React.createElement(\"label\", {\n        \"for\": \"Bank1\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank1\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\",\n        defaultChecked: true\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank One\")), React.createElement(\"label\", {\n        \"for\": \"Bank2\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank2\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\"\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank Two\"))));\n    }\n  }]);\n\n  return DrumMachine;\n}(Component);\n;"
+          "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nimport { bankOne } from './bankone';\nimport { bankTwo } from './banktwo';\nimport { PadBank } from './padbank';\nexport var DrumMachine =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumMachine, _Component);\n\n  function DrumMachine(props) {\n    var _this;\n\n    _classCallCheck(this, DrumMachine);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumMachine).call(this, props));\n    _this.state = {\n      power: false,\n      display: 'Turn ON to use',\n      volumeSlider: 0.5,\n      selectPadBank: bankOne\n    };\n    _this.powerControl = _this.powerControl.bind(_assertThisInitialized(_this));\n    _this.displayMonitor = _this.displayMonitor.bind(_assertThisInitialized(_this));\n    _this.volumeControl = _this.volumeControl.bind(_assertThisInitialized(_this));\n    _this.selectBank = _this.selectBank.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumMachine, [{\n    key: \"powerControl\",\n    value: function powerControl() {\n      this.setState({\n        power: !this.state.power,\n        display: String.fromCharCode(160)\n      });\n    }\n  }, {\n    key: \"displayMonitor\",\n    value: function displayMonitor(x) {\n      if (this.state.power) {\n        this.setState({\n          display: x\n        });\n      }\n    }\n  }, {\n    key: \"volumeControl\",\n    value: function volumeControl(e) {\n      if (this.state.power) {\n        this.setState({\n          volumeSlider: e.target.value,\n          display: 'Volume: ' + Math.round(e.target.value * 100) + '%'\n        });\n      }\n    }\n  }, {\n    key: \"selectBank\",\n    value: function selectBank() {\n      if (this.state.power) {\n        document.getElementById(\"Bank1\").checked === true ? this.setState({\n          display: 'Bank 1 ready',\n          selectPadBank: bankOne\n        }) : this.setState({\n          display: 'Bank 2 ready',\n          selectPadBank: bankTwo\n        });\n      }\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var titleStyle = {\n        color: '#990000',\n        textDecoration: 'underline solid #0000FF',\n        fontStyle: 'italic',\n        fontSize: '1.2em'\n      };\n      return React.createElement(\"div\", {\n        className: \"wrapper\"\n      }, React.createElement(\"div\", {\n        id: \"drum-machine\",\n        className: \"drum-kit\"\n      }, React.createElement(PadBank, {\n        power: this.state.power,\n        display: this.displayMonitor,\n        mp3Volume: this.state.volumeSlider,\n        selectPadBank: this.state.selectPadBank\n      }), React.createElement(\"div\", {\n        className: \"controller\"\n      }, React.createElement(\"label\", {\n        \"for\": \"powerID\",\n        className: \"powerButton\",\n        style: titleStyle\n      }, \"  \", React.createElement(\"p\", null, \"Power\"), React.createElement(\"input\", {\n        type: \"checkbox\",\n        id: \"powerID\",\n        className: \"powerCheckbox\",\n        onClick: this.powerControl\n      }), React.createElement(\"span\", {\n        className: \"powerUI\"\n      })), React.createElement(\"div\", {\n        id: \"display\"\n      }, this.state.display), React.createElement(\"div\", {\n        style: titleStyle\n      }, React.createElement(\"p\", null, \"Volume\"), React.createElement(\"input\", {\n        type: \"range\",\n        min: \"0\",\n        max: \"1\",\n        step: \"0.01\",\n        className: \"volume-slider\",\n        value: this.state.volumeSlider,\n        onChange: this.volumeControl\n      })), React.createElement(\"label\", {\n        \"for\": \"Bank1\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank1\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\",\n        defaultChecked: true\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank One\")), React.createElement(\"label\", {\n        \"for\": \"Bank2\",\n        onClick: this.selectBank\n      }, React.createElement(\"input\", {\n        id: \"Bank2\",\n        type: \"radio\",\n        name: \"bank\",\n        className: \"bank-select-input\"\n      }), React.createElement(\"span\", {\n        className: \"bank-select-button\"\n      }, \"Bank Two\")))), React.createElement(\"footer\", null, \"Code by \", React.createElement(\"a\", {\n        href: \"https://github.com/Leonidas-I\",\n        target: \"_blank\"\n      }, \"Leonidas-I\"), \" aka Tri Phan\"));\n    }\n  }]);\n\n  return DrumMachine;\n}(Component);\n;"
         },
         {
           "id": null,
@@ -2487,7 +2541,7 @@
               "moduleName": "./src/js/drummachine.js",
               "type": "harmony import specifier",
               "userRequest": "./padbank",
-              "loc": "99:29-36"
+              "loc": "101:29-36"
             }
           ],
           "usedExports": [
@@ -2507,7 +2561,7 @@
           "name": "./src/js/drumpad.js",
           "index": 12,
           "index2": 9,
-          "size": 4650,
+          "size": 4675,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2577,7 +2631,7 @@
           "optimizationBailout": [
           ],
           "depth": 3,
-          "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
+          "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link,\n        preload: \"auto\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
         }
       ],
       "filteredModules": 0
@@ -2588,7 +2642,7 @@
       "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss",
       "index": 14,
       "index2": 12,
-      "size": 2823,
+      "size": 3301,
       "built": false,
       "optional": false,
       "prefetched": false,
@@ -2873,14 +2927,14 @@
           "rendered": true,
           "initial": true,
           "entry": true,
-          "size": 5645,
+          "size": 6123,
           "names": [
             "mini-css-extract-plugin"
           ],
           "files": [
             "*"
           ],
-          "hash": "5c9c4e987ceffbaa8a86",
+          "hash": "138efed5c69c68a40da7",
           "siblings": [
           ],
           "parents": [
@@ -2896,7 +2950,7 @@
               "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss",
               "index": 0,
               "index2": 1,
-              "size": 2968,
+              "size": 3446,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -2930,7 +2984,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#d4dfed;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.drum-kit{flex-wrap:wrap;padding:20px;outline:5px solid #ff4500;position:relative;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:700px}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:inline-block}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:inline-block;margin:10px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#dadada}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}@media screen and (max-width:720px){.drum-kit{-webkit-transform:scale(.75);transform:scale(.75);background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
+              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#e0ccb1;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;box-sizing:border-box}.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:10px;outline:5px solid #ff4500;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:100%}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:relative}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:relative;margin:20px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#f3f3f3}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}footer{font-size:1.5em;color:#903;margin-top:1em}footer:hover{color:#f0f8ff;-webkit-transition:color 2s ease .5s;transition:color 2s ease .5s;cursor:not-allowed}footer a{text-decoration:none;color:#8a2be2}@media screen and (max-width:720px){body{-webkit-transform:scale(.6);transform:scale(.6)}.drum-kit{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
             },
             {
               "id": 1,
@@ -3002,7 +3056,7 @@
           "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss",
           "index": 0,
           "index2": 1,
-          "size": 2968,
+          "size": 3446,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -3036,7 +3090,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#d4dfed;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.drum-kit{flex-wrap:wrap;padding:20px;outline:5px solid #ff4500;position:relative;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:700px}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:inline-block}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:inline-block;margin:10px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#dadada}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}@media screen and (max-width:720px){.drum-kit{-webkit-transform:scale(.75);transform:scale(.75);background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
+          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#e0ccb1;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;box-sizing:border-box}.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:10px;outline:5px solid #ff4500;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:100%}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:relative}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:relative;margin:20px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#f3f3f3}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}footer{font-size:1.5em;color:#903;margin-top:1em}footer:hover{color:#f0f8ff;-webkit-transition:color 2s ease .5s;transition:color 2s ease .5s;cursor:not-allowed}footer a{text-decoration:none;color:#8a2be2}@media screen and (max-width:720px){body{-webkit-transform:scale(.6);transform:scale(.6)}.drum-kit{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
         },
         {
           "id": 1,
