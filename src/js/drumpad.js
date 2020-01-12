@@ -60,7 +60,7 @@ export class DrumPad extends Component {
   render() {
     return (
       <div className="drum-pad" id={this.props.idPad} style={this.state.padStatus} onClick={this.playMP3}>
-        <audio className="clip" id={this.props.keyTrigger} src={this.props.link}></audio>
+        <audio className="clip" id={this.props.keyTrigger} src={this.props.link} rel='preload'></audio>
         {this.props.keyTrigger}
       </div>
     )

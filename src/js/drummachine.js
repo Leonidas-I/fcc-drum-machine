@@ -62,38 +62,41 @@ export class DrumMachine extends Component {
     };
     
     return (
-      <div id="drum-machine" className='drum-kit'>
-        <PadBank
-          power={this.state.power}
-          display={this.displayMonitor}
-          mp3Volume={this.state.volumeSlider}
-          selectPadBank={this.state.selectPadBank} />
-        
-        <div className='controller'>
-          <label for='powerID' className='powerButton' style={titleStyle}>  {/*inline style in React JSX*/}
-            <p>Power</p>
-            <input type='checkbox' id='powerID' className='powerCheckbox' onClick={this.powerControl}/>
-            <span className='powerUI'></span>
-          </label>
+      <div className='wrapper'>
+        <div id="drum-machine" className='drum-kit'>
+          <PadBank
+            power={this.state.power}
+            display={this.displayMonitor}
+            mp3Volume={this.state.volumeSlider}
+            selectPadBank={this.state.selectPadBank} />
           
-          <div id='display'>
-            {this.state.display}
+          <div className='controller'>
+            <label for='powerID' className='powerButton' style={titleStyle}>  {/*inline style in React JSX*/}
+              <p>Power</p>
+              <input type='checkbox' id='powerID' className='powerCheckbox' onClick={this.powerControl}/>
+              <span className='powerUI'></span>
+            </label>
+            
+            <div id='display'>
+              {this.state.display}
+            </div>
+            
+            <div style={titleStyle}> 
+              <p>Volume</p>
+              <input type='range' min='0' max='1' step='0.01' className='volume-slider' value={this.state.volumeSlider} onChange={this.volumeControl} />
+            </div>
+            
+            <label for="Bank1" onClick={this.selectBank}>
+              <input id="Bank1" type="radio" name="bank" className="bank-select-input" defaultChecked />
+              <span className="bank-select-button">Bank One</span>
+            </label>
+            <label for="Bank2" onClick={this.selectBank}>
+              <input id="Bank2" type="radio" name="bank" className="bank-select-input" />
+              <span className="bank-select-button">Bank Two</span>
+            </label>
           </div>
-          
-          <div style={titleStyle}> 
-            <p>Volume</p>
-            <input type='range' min='0' max='1' step='0.01' className='volume-slider' value={this.state.volumeSlider} onChange={this.volumeControl} />
-          </div>
-          
-          <label for="Bank1" onClick={this.selectBank}>
-            <input id="Bank1" type="radio" name="bank" className="bank-select-input" defaultChecked />
-            <span className="bank-select-button">Bank One</span>
-          </label>
-          <label for="Bank2" onClick={this.selectBank}>
-            <input id="Bank2" type="radio" name="bank" className="bank-select-input" />
-            <span className="bank-select-button">Bank Two</span>
-          </label>
         </div>
+        <footer>Code by <a href="https://github.com/Leonidas-I" target="_blank">Leonidas-I</a> aka Tri Phan</footer>
       </div>
     )
   }
