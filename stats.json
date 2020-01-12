@@ -4,15 +4,15 @@
   "warnings": [
   ],
   "version": "4.41.2",
-  "hash": "52d22bd951bb846e4cd2",
-  "time": 16486,
-  "builtAt": 1578798675466,
+  "hash": "126ac500b00929d4f41b",
+  "time": 27145,
+  "builtAt": 1578799418187,
   "publicPath": "",
   "outputPath": "/home/arcolinux/leonidas-project/fcc-drum-machine/dist",
   "assetsByChunkName": {
     "main": [
       "main.a1f1d584111a80bf74fd.css",
-      "main.a9805fa56fbe264ce51c.js"
+      "main.704504bb88c91d0136d5.js"
     ],
     "runtime~main": "runtime~main.4b7f394368e818c2a596.js",
     "vendor": "vendor.da4bb7f62e0663db3c28.js"
@@ -30,8 +30,8 @@
       "emitted": true
     },
     {
-      "name": "main.a1f1d584111a80bf74fd.css",
-      "size": 3302,
+      "name": "main.704504bb88c91d0136d5.js",
+      "size": 16184,
       "chunks": [
         0
       ],
@@ -44,8 +44,8 @@
       "emitted": true
     },
     {
-      "name": "main.a9805fa56fbe264ce51c.js",
-      "size": 16185,
+      "name": "main.a1f1d584111a80bf74fd.css",
+      "size": 3302,
       "chunks": [
         0
       ],
@@ -98,7 +98,7 @@
         "runtime~main.4b7f394368e818c2a596.js",
         "vendor.da4bb7f62e0663db3c28.js",
         "main.a1f1d584111a80bf74fd.css",
-        "main.a9805fa56fbe264ce51c.js"
+        "main.704504bb88c91d0136d5.js"
       ],
       "children": {
       },
@@ -117,7 +117,7 @@
         "runtime~main.4b7f394368e818c2a596.js",
         "vendor.da4bb7f62e0663db3c28.js",
         "main.a1f1d584111a80bf74fd.css",
-        "main.a9805fa56fbe264ce51c.js"
+        "main.704504bb88c91d0136d5.js"
       ],
       "children": {
       },
@@ -131,15 +131,15 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 28059,
+      "size": 28058,
       "names": [
         "main"
       ],
       "files": [
         "main.a1f1d584111a80bf74fd.css",
-        "main.a9805fa56fbe264ce51c.js"
+        "main.704504bb88c91d0136d5.js"
       ],
-      "hash": "c8e98b04efef82fac1e3",
+      "hash": "b77b3fa25978cc5e9e4b",
       "siblings": [
         1,
         2
@@ -393,7 +393,7 @@
           "name": "./src/js/index.js + 5 modules",
           "index": 0,
           "index2": 14,
-          "size": 17304,
+          "size": 17303,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -738,7 +738,7 @@
               "name": "./src/js/drumpad.js",
               "index": 12,
               "index2": 9,
-              "size": 4675,
+              "size": 4674,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -808,7 +808,7 @@
               "optimizationBailout": [
               ],
               "depth": 3,
-              "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link,\n        preload: \"auto\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
+              "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link,\n        rel: \"preload\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
             }
           ],
           "filteredModules": 0
@@ -2216,7 +2216,7 @@
       "name": "./src/js/index.js + 5 modules",
       "index": 0,
       "index2": 14,
-      "size": 17304,
+      "size": 17303,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -2561,7 +2561,7 @@
           "name": "./src/js/drumpad.js",
           "index": 12,
           "index2": 9,
-          "size": 4675,
+          "size": 4674,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -2631,7 +2631,7 @@
           "optimizationBailout": [
           ],
           "depth": 3,
-          "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link,\n        preload: \"auto\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
+          "source": "function _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nimport React, { Component } from 'react';\nvar activeStatus = {\n  backgroundColor: 'orangered',\n  boxShadow: '0 3px orangered'\n};\nvar inactiveStatus = {\n  backgroundColor: 'silver',\n  boxShadow: '3px 3px 5px black'\n};\nexport var DrumPad =\n/*#__PURE__*/\nfunction (_Component) {\n  _inherits(DrumPad, _Component);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _possibleConstructorReturn(this, _getPrototypeOf(DrumPad).call(this, props));\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener('keydown', this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === 'orangered' ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return React.createElement(\"div\", {\n        className: \"drum-pad\",\n        id: this.props.idPad,\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, React.createElement(\"audio\", {\n        className: \"clip\",\n        id: this.props.keyTrigger,\n        src: this.props.link,\n        rel: \"preload\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
         }
       ],
       "filteredModules": 0
