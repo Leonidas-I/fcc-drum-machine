@@ -4,14 +4,14 @@
   "warnings": [
   ],
   "version": "4.41.2",
-  "hash": "126ac500b00929d4f41b",
-  "time": 27145,
-  "builtAt": 1578799418187,
+  "hash": "a9e3777c9b2e20e0bb0b",
+  "time": 18969,
+  "builtAt": 1578804374824,
   "publicPath": "",
   "outputPath": "/home/arcolinux/leonidas-project/fcc-drum-machine/dist",
   "assetsByChunkName": {
     "main": [
-      "main.a1f1d584111a80bf74fd.css",
+      "main.7d58519acdc324696092.css",
       "main.704504bb88c91d0136d5.js"
     ],
     "runtime~main": "runtime~main.4b7f394368e818c2a596.js",
@@ -44,7 +44,7 @@
       "emitted": true
     },
     {
-      "name": "main.a1f1d584111a80bf74fd.css",
+      "name": "main.7d58519acdc324696092.css",
       "size": 3302,
       "chunks": [
         0
@@ -97,7 +97,7 @@
       "assets": [
         "runtime~main.4b7f394368e818c2a596.js",
         "vendor.da4bb7f62e0663db3c28.js",
-        "main.a1f1d584111a80bf74fd.css",
+        "main.7d58519acdc324696092.css",
         "main.704504bb88c91d0136d5.js"
       ],
       "children": {
@@ -116,7 +116,7 @@
       "assets": [
         "runtime~main.4b7f394368e818c2a596.js",
         "vendor.da4bb7f62e0663db3c28.js",
-        "main.a1f1d584111a80bf74fd.css",
+        "main.7d58519acdc324696092.css",
         "main.704504bb88c91d0136d5.js"
       ],
       "children": {
@@ -136,10 +136,10 @@
         "main"
       ],
       "files": [
-        "main.a1f1d584111a80bf74fd.css",
+        "main.7d58519acdc324696092.css",
         "main.704504bb88c91d0136d5.js"
       ],
-      "hash": "b77b3fa25978cc5e9e4b",
+      "hash": "7bfdc70fed6cd51b65e9",
       "siblings": [
         1,
         2
@@ -2934,7 +2934,7 @@
           "files": [
             "*"
           ],
-          "hash": "138efed5c69c68a40da7",
+          "hash": "9e60cbe13ba4c2da10d6",
           "siblings": [
           ],
           "parents": [
@@ -2984,7 +2984,7 @@
                 "ModuleConcatenation bailout: Module is not an ECMAScript module"
               ],
               "depth": 0,
-              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#e0ccb1;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;box-sizing:border-box}.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:10px;outline:5px solid #ff4500;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:100%}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:relative}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:relative;margin:20px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#f3f3f3}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}footer{font-size:1.5em;color:#903;margin-top:1em}footer:hover{color:#f0f8ff;-webkit-transition:color 2s ease .5s;transition:color 2s ease .5s;cursor:not-allowed}footer a{text-decoration:none;color:#8a2be2}@media screen and (max-width:720px){body{-webkit-transform:scale(.6);transform:scale(.6)}.drum-kit{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
+              "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#ffe766;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;box-sizing:border-box}.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:10px;outline:5px solid #ff4500;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:100%}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:relative}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:relative;margin:20px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#f3f3f3}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}footer{font-size:1.5em;color:#903;margin-top:1em}footer:hover{color:#f0f8ff;-webkit-transition:color 2s ease .5s;transition:color 2s ease .5s;cursor:not-allowed}footer a{text-decoration:none;color:#8a2be2}@media screen and (max-width:720px){body{-webkit-transform:scale(.6);transform:scale(.6)}.drum-kit{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
             },
             {
               "id": 1,
@@ -3090,7 +3090,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 0,
-          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#e0ccb1;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;box-sizing:border-box}.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:10px;outline:5px solid #ff4500;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:100%}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:relative}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:relative;margin:20px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#f3f3f3}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}footer{font-size:1.5em;color:#903;margin-top:1em}footer:hover{color:#f0f8ff;-webkit-transition:color 2s ease .5s;transition:color 2s ease .5s;cursor:not-allowed}footer a{text-decoration:none;color:#8a2be2}@media screen and (max-width:720px){body{-webkit-transform:scale(.6);transform:scale(.6)}.drum-kit{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
+          "source": "exports = module.exports = require(\"../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \"body{background-color:#ffe766;font-family:Helvetica,Arial,sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#App{height:100vh}#App,.wrapper{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center}.wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;box-sizing:border-box}.drum-kit{display:-webkit-box;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding:10px;outline:5px solid #ff4500;background-image:-webkit-gradient(linear,left top,right top,from(#0ff),to(#f4aff4));background-image:linear-gradient(90deg,#0ff,#f4aff4);text-align:center;width:100%}.drum-kit .pad-bank{height:330px;width:330px;margin:20px;display:relative}.drum-kit .pad-bank .drum-pad{position:relative;float:left;height:100px;width:100px;box-sizing:border-box;padding-top:40px;margin-right:10px;margin-top:10px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1.2em;color:#000}.drum-kit .controller{height:340px;width:260px;display:relative;margin:20px;position:relative;box-sizing:border-box}.drum-kit .controller .powerButton{font-family:Arial,sans-serif;display:inline-block;vertical-align:top;margin:5px auto;font-size:1.2em}.drum-kit .controller .powerButton .powerCheckbox{display:none}.drum-kit .controller .powerButton .powerUI{position:relative;display:inline-block;font-size:1rem;line-height:20px;width:80px;height:30px;text-transform:uppercase;background-color:red;border:1px solid red;color:#fff;-webkit-transition:all .5s ease;transition:all .5s ease;cursor:pointer}.drum-kit .controller .powerButton .powerUI:before{position:absolute;display:inline-block;top:5px;left:5px;height:20px;background:#fff;color:red;content:\\\"off\\\";-webkit-transition:all .5s ease;transition:all .5s ease}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI{background-color:#0c0;border:1px solid #0c0}.drum-kit .controller .powerButton .powerCheckbox:checked+.powerUI:before{left:50px;content:\\\"on\\\";color:#0c0}.drum-kit .controller #display{box-sizing:border-box;width:200px;margin:20px auto;padding:20px;border-radius:10px 20px;background-color:#f3f3f3}.drum-kit .controller .volume-slider{cursor:pointer;margin:10px auto}.drum-kit .controller .bank-select-input{display:none}.drum-kit .controller .bank-select-button{margin:10px;position:relative;font-size:1em;display:inline-block;font-family:Monospace,serif,sans-serif;border:1px solid #fff;padding:5px;background-color:#fff;cursor:pointer;-webkit-transition:all .5s ease-out;transition:all .5s ease-out}.drum-kit .controller .bank-select-input:checked+.bank-select-button{background-color:#ff4500;border-color:#ff4500;color:#fff}footer{font-size:1.5em;color:#903;margin-top:1em}footer:hover{color:#f0f8ff;-webkit-transition:color 2s ease .5s;transition:color 2s ease .5s;cursor:not-allowed}footer a{text-decoration:none;color:#8a2be2}@media screen and (max-width:720px){body{-webkit-transform:scale(.6);transform:scale(.6)}.drum-kit{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap;background-image:-webkit-gradient(linear,left top,left bottom,from(#0ff),to(#f4aff4));background-image:linear-gradient(180deg,#0ff,#f4aff4)}}\", \"\"]);\n"
         },
         {
           "id": 1,
