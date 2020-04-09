@@ -1,31 +1,31 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import { Pad } from "./DrumPad.css";
 
 const activeStatus = {
-  backgroundColor: 'orangered',
-  boxShadow: '0 3px orangered',
-  
+  backgroundColor: "#ff4500",
+  boxShadow: "0 3px #ff4500",
 };
 
 const inactiveStatus = {
-  backgroundColor: 'silver',
-  boxShadow: '3px 3px 5px black',
+  backgroundColor: "#f2f2f2",
+  boxShadow: "3px 3px 5px #808080",
 };
 
 export class DrumPad extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      padStatus: inactiveStatus
-    }
+      padStatus: inactiveStatus,
+    };
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.activePad = this.activePad.bind(this);
     this.playMP3 = this.playMP3.bind(this);
   }
   componentDidMount() {
-    document.addEventListener('keydown', this.handleKeyPress);
+    document.addEventListener("keydown", this.handleKeyPress);
   }
   componentWillUnmount() {
-    document.removeEventListener('keydown', this.handleKeyPress);
+    document.removeEventListener("keydown", this.handleKeyPress);
   }
   handleKeyPress(e) {
     if (e.keyCode === this.props.keyCode) {
@@ -34,17 +34,16 @@ export class DrumPad extends Component {
   }
   activePad() {
     if (this.props.power) {
-      this.state.padStatus.backgroundColor === 'orangered' ? 
-        this.setState({
-          padStatus: inactiveStatus
-        }) : 
-        this.setState({
-          padStatus: activeStatus
-        });
-    }
-    else {
+      this.state.padStatus.backgroundColor === "#ff4500"
+        ? this.setState({
+            padStatus: inactiveStatus,
+          })
+        : this.setState({
+            padStatus: activeStatus,
+          });
+    } else {
       this.setState({
-        padStatus: inactiveStatus
+        padStatus: inactiveStatus,
       });
     }
   }
@@ -59,10 +58,10 @@ export class DrumPad extends Component {
   }
   render() {
     return (
-      <div className="drum-pad" id={this.props.idPad} style={this.state.padStatus} onClick={this.playMP3}>
-        <audio className="clip" id={this.props.keyTrigger} src={this.props.link} rel='preload'></audio>
+      <Pad style={this.state.padStatus} onClick={this.playMP3}>
+        <audio src={this.props.link} id={this.props.keyTrigger} rel="preload" />
         {this.props.keyTrigger}
-      </div>
-    )
+      </Pad>
+    );
   }
 }

@@ -1,30 +1,30 @@
 module.exports = {
   entry: {
-    main: './src/js/index.js'
+    main: "./src/index.js",
   },
   optimization: {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-          name: 'vendor',
-          chunks: 'all'
-        }
-      }
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all",
+        },
+      },
     },
-    runtimeChunk: true
+    runtimeChunk: true,
   },
   module: {
     rules: [
       {
         test: /\.html$/,
-        use: ['html-loader']
+        use: ["html-loader"],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
-      }
-    ]
-  }
+        use: ["babel-loader"],
+      },
+    ],
+  },
 };
