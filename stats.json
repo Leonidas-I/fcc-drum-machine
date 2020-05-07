@@ -4,13 +4,13 @@
   "warnings": [
   ],
   "version": "4.42.1",
-  "hash": "d4c3e0bf20adcbb01360",
-  "time": 55682,
-  "builtAt": 1588848140492,
+  "hash": "9d351cfbfd78047d9a8b",
+  "time": 32283,
+  "builtAt": 1588849381511,
   "publicPath": "",
   "outputPath": "/home/arcolinux/leonidas-project/fcc-drum-machine/dist",
   "assetsByChunkName": {
-    "main": "main.5a89fb9dea2767bc569b.js",
+    "main": "main.ad180fafde5ee9899b5a.js",
     "padbankLoad": "padbankLoad.74c6f60b6c79d34e3957.js",
     "runtime~main": "runtime~main.25291dd1bf1d5073c49b.js",
     "vendors": "vendors.d6401765dbda4f08ff8f.js"
@@ -28,8 +28,8 @@
       "emitted": true
     },
     {
-      "name": "main.5a89fb9dea2767bc569b.js",
-      "size": 12313,
+      "name": "main.ad180fafde5ee9899b5a.js",
+      "size": 12327,
       "chunks": [
         0
       ],
@@ -95,7 +95,7 @@
       "assets": [
         "runtime~main.25291dd1bf1d5073c49b.js",
         "vendors.d6401765dbda4f08ff8f.js",
-        "main.5a89fb9dea2767bc569b.js"
+        "main.ad180fafde5ee9899b5a.js"
       ],
       "children": {
       },
@@ -113,7 +113,7 @@
       "assets": [
         "runtime~main.25291dd1bf1d5073c49b.js",
         "vendors.d6401765dbda4f08ff8f.js",
-        "main.5a89fb9dea2767bc569b.js"
+        "main.ad180fafde5ee9899b5a.js"
       ],
       "children": {
       },
@@ -139,14 +139,14 @@
       "rendered": true,
       "initial": true,
       "entry": false,
-      "size": 18810,
+      "size": 18834,
       "names": [
         "main"
       ],
       "files": [
-        "main.5a89fb9dea2767bc569b.js"
+        "main.ad180fafde5ee9899b5a.js"
       ],
-      "hash": "40fdab575e08cbadd9a5",
+      "hash": "63837560fe168fbcd248",
       "siblings": [
         2,
         3
@@ -608,7 +608,7 @@
           "name": "./src/index.js + 16 modules",
           "index": 0,
           "index2": 48,
-          "size": 16986,
+          "size": 17010,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -1499,7 +1499,7 @@
               "name": "./src/components/DrumPad/DrumPad.js",
               "index": 37,
               "index2": 35,
-              "size": 3556,
+              "size": 3580,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -1569,7 +1569,7 @@
               "optimizationBailout": [
               ],
               "depth": 3,
-              "source": "import _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n\nfunction _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nimport React, { Component } from \"react\";\nimport { Pad } from \"./DrumPad.css\";\nvar activeStatus = {\n  backgroundColor: \"#ff4500\",\n  boxShadow: \"0 3px #ff4500\"\n};\nvar inactiveStatus = {\n  backgroundColor: \"#f2f2f2\",\n  boxShadow: \"3px 3px 5px #808080\"\n};\nexport var DrumPad = /*#__PURE__*/function (_Component) {\n  _inherits(DrumPad, _Component);\n\n  var _super = _createSuper(DrumPad);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === \"#ff4500\" ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/React.createElement(Pad, {\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, /*#__PURE__*/React.createElement(\"audio\", {\n        src: this.props.link,\n        id: this.props.keyTrigger\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
+              "source": "import _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n\nfunction _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nimport React, { Component } from \"react\";\nimport { Pad } from \"./DrumPad.css\";\nvar activeStatus = {\n  backgroundColor: \"#ff4500\",\n  boxShadow: \"0 3px #ff4500\"\n};\nvar inactiveStatus = {\n  backgroundColor: \"#f2f2f2\",\n  boxShadow: \"3px 3px 5px #808080\"\n};\nexport var DrumPad = /*#__PURE__*/function (_Component) {\n  _inherits(DrumPad, _Component);\n\n  var _super = _createSuper(DrumPad);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === \"#ff4500\" ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/React.createElement(Pad, {\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, /*#__PURE__*/React.createElement(\"audio\", {\n        src: this.props.link,\n        id: this.props.keyTrigger,\n        rel: \"preload\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
             },
             {
               "id": null,
@@ -1675,9 +1675,9 @@
               "prefetched": false,
               "chunks": [
               ],
-              "issuer": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Volume/Volume.js",
+              "issuer": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Power/Power.js",
               "issuerId": null,
-              "issuerName": "./src/components/Volume/Volume.js",
+              "issuerName": "./src/components/Power/Power.js",
               "issuerPath": [
                 {
                   "id": null,
@@ -1691,8 +1691,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Volume/Volume.js",
-                  "name": "./src/components/Volume/Volume.js"
+                  "identifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Power/Power.js",
+                  "name": "./src/components/Power/Power.js"
                 }
               ],
               "failed": false,
@@ -2571,7 +2571,7 @@
               "moduleName": "./src/index.js + 16 modules",
               "type": "harmony import specifier",
               "userRequest": "react",
-              "loc": "103:2-11"
+              "loc": "104:2-11"
             },
             {
               "moduleId": 31,
@@ -2818,7 +2818,7 @@
               "moduleName": "./src/index.js + 16 modules",
               "type": "harmony side effect evaluation",
               "userRequest": "styled-components",
-              "loc": "1:0-39"
+              "loc": "1:0-48"
             },
             {
               "moduleId": 31,
@@ -2827,7 +2827,7 @@
               "moduleName": "./src/index.js + 16 modules",
               "type": "harmony side effect evaluation",
               "userRequest": "styled-components",
-              "loc": "1:0-48"
+              "loc": "1:0-39"
             },
             {
               "moduleId": 31,
@@ -5582,7 +5582,7 @@
           "moduleName": "./src/index.js + 16 modules",
           "type": "harmony import specifier",
           "userRequest": "react",
-          "loc": "103:2-11"
+          "loc": "104:2-11"
         },
         {
           "moduleId": 31,
@@ -6124,7 +6124,7 @@
           "moduleName": "./src/index.js + 16 modules",
           "type": "harmony side effect evaluation",
           "userRequest": "styled-components",
-          "loc": "1:0-39"
+          "loc": "1:0-48"
         },
         {
           "moduleId": 31,
@@ -6133,7 +6133,7 @@
           "moduleName": "./src/index.js + 16 modules",
           "type": "harmony side effect evaluation",
           "userRequest": "styled-components",
-          "loc": "1:0-48"
+          "loc": "1:0-39"
         },
         {
           "moduleId": 31,
@@ -8467,7 +8467,7 @@
       "name": "./src/index.js + 16 modules",
       "index": 0,
       "index2": 48,
-      "size": 16986,
+      "size": 17010,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -9358,7 +9358,7 @@
           "name": "./src/components/DrumPad/DrumPad.js",
           "index": 37,
           "index2": 35,
-          "size": 3556,
+          "size": 3580,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -9428,7 +9428,7 @@
           "optimizationBailout": [
           ],
           "depth": 3,
-          "source": "import _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n\nfunction _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nimport React, { Component } from \"react\";\nimport { Pad } from \"./DrumPad.css\";\nvar activeStatus = {\n  backgroundColor: \"#ff4500\",\n  boxShadow: \"0 3px #ff4500\"\n};\nvar inactiveStatus = {\n  backgroundColor: \"#f2f2f2\",\n  boxShadow: \"3px 3px 5px #808080\"\n};\nexport var DrumPad = /*#__PURE__*/function (_Component) {\n  _inherits(DrumPad, _Component);\n\n  var _super = _createSuper(DrumPad);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === \"#ff4500\" ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/React.createElement(Pad, {\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, /*#__PURE__*/React.createElement(\"audio\", {\n        src: this.props.link,\n        id: this.props.keyTrigger\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
+          "source": "import _classCallCheck from \"@babel/runtime/helpers/classCallCheck\";\nimport _createClass from \"@babel/runtime/helpers/createClass\";\nimport _assertThisInitialized from \"@babel/runtime/helpers/assertThisInitialized\";\nimport _possibleConstructorReturn from \"@babel/runtime/helpers/possibleConstructorReturn\";\nimport _getPrototypeOf from \"@babel/runtime/helpers/getPrototypeOf\";\nimport _inherits from \"@babel/runtime/helpers/inherits\";\n\nfunction _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nimport React, { Component } from \"react\";\nimport { Pad } from \"./DrumPad.css\";\nvar activeStatus = {\n  backgroundColor: \"#ff4500\",\n  boxShadow: \"0 3px #ff4500\"\n};\nvar inactiveStatus = {\n  backgroundColor: \"#f2f2f2\",\n  boxShadow: \"3px 3px 5px #808080\"\n};\nexport var DrumPad = /*#__PURE__*/function (_Component) {\n  _inherits(DrumPad, _Component);\n\n  var _super = _createSuper(DrumPad);\n\n  function DrumPad(props) {\n    var _this;\n\n    _classCallCheck(this, DrumPad);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      padStatus: inactiveStatus\n    };\n    _this.handleKeyPress = _this.handleKeyPress.bind(_assertThisInitialized(_this));\n    _this.activePad = _this.activePad.bind(_assertThisInitialized(_this));\n    _this.playMP3 = _this.playMP3.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(DrumPad, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      document.addEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"componentWillUnmount\",\n    value: function componentWillUnmount() {\n      document.removeEventListener(\"keydown\", this.handleKeyPress);\n    }\n  }, {\n    key: \"handleKeyPress\",\n    value: function handleKeyPress(e) {\n      if (e.keyCode === this.props.keyCode) {\n        this.playMP3();\n      }\n    }\n  }, {\n    key: \"activePad\",\n    value: function activePad() {\n      if (this.props.power) {\n        this.state.padStatus.backgroundColor === \"#ff4500\" ? this.setState({\n          padStatus: inactiveStatus\n        }) : this.setState({\n          padStatus: activeStatus\n        });\n      } else {\n        this.setState({\n          padStatus: inactiveStatus\n        });\n      }\n    }\n  }, {\n    key: \"playMP3\",\n    value: function playMP3() {\n      var _this2 = this;\n\n      var mp3 = document.getElementById(this.props.keyTrigger);\n      mp3.currentTime = 0;\n      mp3.volume = this.props.mp3Volume;\n      mp3.play();\n      this.activePad();\n      setTimeout(function () {\n        return _this2.activePad();\n      }, 100);\n      this.props.display(this.props.idPad);\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/React.createElement(Pad, {\n        style: this.state.padStatus,\n        onClick: this.playMP3\n      }, /*#__PURE__*/React.createElement(\"audio\", {\n        src: this.props.link,\n        id: this.props.keyTrigger,\n        rel: \"preload\"\n      }), this.props.keyTrigger);\n    }\n  }]);\n\n  return DrumPad;\n}(Component);"
         },
         {
           "id": null,
@@ -9534,9 +9534,9 @@
           "prefetched": false,
           "chunks": [
           ],
-          "issuer": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Volume/Volume.js",
+          "issuer": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Power/Power.js",
           "issuerId": null,
-          "issuerName": "./src/components/Volume/Volume.js",
+          "issuerName": "./src/components/Power/Power.js",
           "issuerPath": [
             {
               "id": null,
@@ -9550,8 +9550,8 @@
             },
             {
               "id": null,
-              "identifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Volume/Volume.js",
-              "name": "./src/components/Volume/Volume.js"
+              "identifier": "/home/arcolinux/leonidas-project/fcc-drum-machine/node_modules/babel-loader/lib/index.js!/home/arcolinux/leonidas-project/fcc-drum-machine/src/components/Power/Power.js",
+              "name": "./src/components/Power/Power.js"
             }
           ],
           "failed": false,
