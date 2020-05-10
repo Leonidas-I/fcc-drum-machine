@@ -3,7 +3,7 @@ import { Author } from "../Author/Author";
 import { BankButton } from "../BankButton/BankButton";
 import { PadBank } from "../PadBank/PadBank";
 import { Power } from "../Power/Power";
-import { bankZero, bankOne, bankTwo } from "../Sound/Sound";
+import { bankZero } from "../Sound/initialBank";
 import { Volume } from "../Volume/Volume";
 import { Wrapper } from "./App.css";
 import { DrumMachine, Controller } from "../Others/Container.css";
@@ -46,16 +46,19 @@ export class App extends Component {
       });
     }
   }
-  selectBank() {
+  async selectBank() {
+    let padbankLoad = await import(
+      /* webpackChunkName: "padbankLoad" */ "../Sound/Sound"
+    );
     if (this.state.power) {
       document.getElementById("Bank-1").checked === true
         ? this.setState({
             display: "Bank-1 ready",
-            selectPadBank: bankOne,
+            selectPadBank: padbankLoad.bankOne,
           })
         : this.setState({
             display: "Bank-2 ready",
-            selectPadBank: bankTwo,
+            selectPadBank: padbankLoad.bankTwo,
           });
     }
   }

@@ -5,10 +5,15 @@ module.exports = {
   optimization: {
     splitChunks: {
       cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: "vendor",
+        vendors: {
+          test: /[\\/]node_modules[\\/]/i,
+          name: "vendors",
           chunks: "all",
+        },
+        commons: {
+          name: "commons",
+          chunks: "initial",
+          minChunks: 2,
         },
       },
     },
