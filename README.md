@@ -8,13 +8,15 @@ mouse click or keyboard press to listen mp3 clip
 
 webpack for dev and product mode  
 npm script and package  
-bundle splitting
-minify html js css  
+bundle splitting each npm package  
+minify html js  
 sourcemap for dev mode  
-css-in-js with styled-components
+css-in-js with styled-components  
+dynamic import 1 method  
+browser support
 
 # Things i may have improved
 
-dynamic import  
-web worker  
+test with jest/mocha  
+PWA - web worker  
 redux
